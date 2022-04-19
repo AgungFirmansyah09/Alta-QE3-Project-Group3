@@ -1,25 +1,25 @@
 # API Automation testing 
 
-# Framework 
+* Framework 
 > Serenity BDD
 > Cucumber
 
-# Code editor
+* Code editor
 > Intellij IDEA
 > VS Code
 
-# Browser
+* Browser
 > Google Chrome
 > Microsoft Edge
 
-# Language Scenario
+* Language Scenario
 > Gerkin Language
 
-# Language Code
+* Language Code
 > Java
 > Json Schema
 
-# Team
+* Team
 > Agung firmansyah 
 > Ratna Khoirunnisa
 > Ade Muhammad Abid
