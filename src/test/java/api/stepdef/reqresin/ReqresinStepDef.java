@@ -44,5 +44,24 @@ public class ReqresinStepDef {
     public void userSendPOSTLoginRequestToReqresinAndFaildEmail() {
         reqresin.postLoginFail();
     }
+    @When("user successful send Put update data request in reqresin")
+    public void PUTupdateData() {
+        Reqresin.postupdate();
+    }
+    @When("user successful send Delete accont request in reqresin")
+    public void DELETEaccount() {
+        Reqresin.delete();
+    }
+
+    @Then("respone status code should be {int}")
+    public void responeStatusCodeShouldBe(int statusCode) {
+        restAssuredThat(respone -> respone.statusCode(statusCode));
+    }
+
+    @And("respone structure sould match json scema {string}")
+    public void respone(String scema) {
+        String Path = String.format("scema/%s", scema);
+        restAssuredThat(response -> response.assertThat().body(matchesJsonSchemaInClasspath(Path)));
+    }
 
 }
